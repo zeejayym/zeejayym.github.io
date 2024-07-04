@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (backToTop) {
         window.addEventListener('scroll', () => {
             const onScreen = isElementOnScreen(backToTop);
-            icon.style.opacity = onScreen ? '1' : '0';
-            icon.style.transition = 'opacity 0.5s ease-in-out'; 
+            backToTop.style.opacity = onScreen ? '1' : '0';
+            backToTop.style.transition = 'opacity 0.5s ease-in-out'; 
         });
     }
 
