@@ -1,0 +1,9 @@
+<svg id="koax" viewBox="0 0 154 244" xmlns="http://www.w3.org/2000/svg">
+<style>
+#koax>path{mix-blend-mode:screen}
+@media(prefers-color-scheme:light){#koax>path{fill:#222!important}}
+@media(prefers-color-scheme:dark){#koax>path{fill:#ddd!important;mix-blend-mode:multiply}}</style>
+<path d="M0,0 V244 l45,-45 V45z" fill="#f00"/>
+<path d="M90,90 h64 L0,244 v-64z" fill="#0b0"/>
+<path d="M0,90 v64 l90,90 h64z " fill="#08f"/>
+</svg>

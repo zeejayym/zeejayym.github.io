@@ -2,3 +2,29 @@ footer {
     position: fixed;
     bottom: 0;
 }
+/* Generate overwrite default font to Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif!important;
+}
+.navbar {
+    /* background: rgba(0, 0, 0, 0.2) !important;   */
+    background: linear-gradient(rgba(0, 0, 0, 1) 20%, rgb(0 0 0 / 0) ) !important;
+    z-index: 2;
+    backdrop-filter: blur(10px) saturate(125%);                    
+    -webkit-backdrop-filter: blur(10px) saturate(125%);           
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.navbar {
+    /* background: rgba(0, 0, 0, 0.2) !important;   */
+    background: linear-gradient(rgba(0, 0, 0, 1) 20%, rgb(0 0 0 / 0) ) !important;
+    z-index: 2;
+    backdrop-filter: blur(10px) saturate(125%);                    
+    -webkit-backdrop-filter: blur(10px) saturate(125%);           
+}
+
