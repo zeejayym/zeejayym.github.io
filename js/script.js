@@ -6,17 +6,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if (backToTop) {
         window.addEventListener('scroll', () => {
             const onScreen = isElementOnScreen(backToTop);
-            backToTop.style.opacity = onScreen ? '1' : '0';
-            backToTop.style.transition = 'opacity 0.5s ease-in-out';
+            icon.style.opacity = onScreen ? '1' : '0';
+            icon.style.transition = 'opacity 0.5s ease-in-out'; 
         });
     }
 
     if (gameCount) {
-        animateCount(gameCount, 17, 45);
+        animateCount(gameCount, 17, 45, 'lime');
     }
 
     if (visitCount) {
-        animateCount(visitCount, 40, 19);
+        animateCount(visitCount, 40, 19, 'lime');
     }
 
     function isElementOnScreen(element) {
@@ -29,13 +29,15 @@ document.addEventListener('DOMContentLoaded', () => {
         );
     }
 
-    function animateCount(element, maxValue, interval) {
+    function animateCount(element, maxValue, interval, color) {
         let number = 0;
         const intervalId = setInterval(() => {
             element.textContent = number;
             if (number === maxValue) {
-                element.parentElement.style.color = 'lime';
-                element.parentElement.style.transition = 'color 0.5s ease-in-out';
+                const parent = element.parentElement;
+                const icon = parent.querySelector('i'); 
+                icon.style.color = color; 
+                icon.style.transition = 'color 0.5s ease-in-out'; 
             }
             number++;
             if (number > maxValue) {
