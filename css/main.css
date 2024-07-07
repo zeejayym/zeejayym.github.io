@@ -1,14 +1,30 @@
 /* Generate overwrite default font to Roboto */
+html::after {
+    content: '';
+    opacity: 1;
+    position: fixed;
+    height: 200px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    mask: linear-gradient(#000, #0000); 
+    -webkit-mask: linear-gradient(#000, #0000);
+    pointer-events: none;
+    z-index: 100;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
     font-family: 'Roboto', sans-serif!important;
 }
+
 .navbar {
     /* background: rgba(0, 0, 0, 0.2) !important;   */
-    background: linear-gradient(rgba(0, 0, 0, 1) 20%, rgb(0 0 0 / 0) ) !important;
-    z-index: 2;
-    backdrop-filter: blur(10px) saturate(125%);                    
-    -webkit-backdrop-filter: blur(10px) saturate(125%);           
+    background: linear-gradient(#000, #0000) !important;
+    z-index: 101;
 }
 
 @keyframes shake {
