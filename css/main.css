@@ -1,4 +1,6 @@
 /* Generate overwrite default font to Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 html::after {
     content: '';
     opacity: 1;
@@ -16,7 +18,6 @@ html::after {
     z-index: 100;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
     font-family: 'Roboto', sans-serif!important;
 }
@@ -25,6 +26,14 @@ body {
     /* background: rgba(0, 0, 0, 0.2) !important;   */
     background: linear-gradient(#000, #0000) !important;
     z-index: 101;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        background: linear-gradient(#000, #0009) !important;
+    }
 }
 
 @keyframes shake {
